@@ -6,7 +6,7 @@
  * Time: 上午2:45
  */
 include_once "countryFactory.php";
-include_once  "myfirstProduct.php";
+include_once  "rowProduct.php";
 
 class Client
 {
@@ -15,7 +15,7 @@ class Client
     public function __construct()
     {
         $this->countryFactory = new CountryFactory();
-        echo $this->countryFactory->doFactory(new myfirstProduct());
+        echo $this->countryFactory->doFactory(new rowProduct());
     }
 }
 
