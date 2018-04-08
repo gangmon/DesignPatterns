@@ -34,6 +34,12 @@ class Person extends CloneMe
     }
 }
 
+/**
+ * 具体类Person扩展了CloneMe抽象类。
+ * $worker 实例化了一个Person类实例
+ * 第二个实例变量$slacker克隆Person实例$worker
+ * attention:克隆不会启动构造函数中的动作
+ */
 $worker = new Person();
 $worker->display();
 
